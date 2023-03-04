@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="376.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kurs.obycheniekursprilogenie.Controllers.RegController">
+   <children>
+      <Label layoutX="56.0" layoutY="37.0" text="Кабинет пользователя" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reg_login" focusTraversable="false" layoutX="95.0" layoutY="89.0" promptText="Введите новый логин" styleClass="text-input" stylesheets="@../../../Style/main.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_email" focusTraversable="false" layoutX="95.0" layoutY="147.0" promptText="Введите новый email" styleClass="text-input" stylesheets="@../../../Style/main.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="reg_password" focusTraversable="false" layoutX="95.0" layoutY="200.0" promptText="Введите новый пароль" styleClass="text-input" stylesheets="@../../../Style/main.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="reg_btn" alignment="CENTER" focusTraversable="false" layoutX="117.0" layoutY="263.0" mnemonicParsing="false" stylesheets="@../../../Style/main.css" text="Изменить данные" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
